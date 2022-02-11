@@ -1,0 +1,61 @@
+body{
+    font-family: 'Redressed', cursive;
+    /* font-family: 'Roboto', sans-serif; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0;
+    color: white;
+    background-image: url("./back.jpeg");
+}
+
+.float_box{
+    background: #000000d0;
+    border-radius: 25px;
+    padding: 20px;
+    width: 100%;
+    max-width: 420px;
+    margin:1em;
+}
+
+.search_div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.city_name{
+    font: inherit;
+    background-color: #7c7c7c2b;
+    padding: 0.5em 1em;
+    color: white;
+    height: 28px;
+    border-radius: 10px;
+    outline:  none;
+    border: none;
+    width: calc(100% - 100px);
+}
+
+.search{
+    color: white;
+    background: #7c7c7c8b;
+    width: 2.2em;
+    height: 2.2em;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin: 5px;
+}
+.search :hover{
+    cursor: pointer;
+    /* transition: 0.2s ease-in-out;   yeh kya krta? */
+    /* background: #7c7c7c6b; */
+}
+.temp{
+    margin:0;
+}
+.describe{
+    display: flex;
+}
