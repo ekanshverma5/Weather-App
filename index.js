@@ -4,7 +4,7 @@ let city=document.querySelector(".city_name");
 function fetch_weather()
 {
     var city_name=city.value;       
-    fetch("http://api.openweathermap.org/data/2.5/weather?q="+city_name+"&units=metric&appid=d38f9eb3c37c222223c5a0aa6e0a33b6"
+    fetch("https://api.openweathermap.org/data/2.5/weather?q="+city_name+"&units=metric&appid=d38f9eb3c37c222223c5a0aa6e0a33b6"
     ).then((response)=> response.json()).then((data)=> update(data));
     city.value="";
 }
@@ -19,8 +19,8 @@ function update(data)
     var x=document.querySelectorAll("h1");
     x[0].innerHTML="Weather in " +name;
     x[1].innerHTML= temp+"°C";
-    console.log(icon);
-    document.querySelector(".icon").src="http://openweathermap.org/img/wn/" + icon + ".png";;
+    // console.log(icon);
+    document.querySelector(".icon").src="https://openweathermap.org/img/wn/" + icon + ".png";;
     x=document.querySelectorAll("p");
     x[0].innerHTML=""+description;
     x[1].innerHTML="Humidity : "+humidity+" %";
